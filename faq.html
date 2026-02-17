@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.png" sizes="32x32" />
+    <title>myo clinic</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/mn-style.css">
+</head>
+
+<body>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <div class="close-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M21.001 4.41406L13.416 11.998L21.0039 19.5859L19.5898 21L12.002 13.4121L4.41406 21L3 19.5859L10.5869 11.998L3.00293 4.41406L4.41699 3L12.002 10.584L19.5869 3L21.001 4.41406Z"
+                        fill="#444444" />
+                </svg>
+            </div>
+            <div class="pdf-progress" style="background-image: url(assets/images/popbg.png);">
+                <!-- Progress Bar Component -->
+                <!-- PHP Integration: Inject variables into data-current and data-total -->
+                <div class="progress-wrapper" data-current="0" data-total="1">
+                    <svg class="progress-svg" viewBox="0 0 54 54">
+                        <!-- Background Circle (Solid Grey) -->
+                        <circle class="progress-circle-bg" cx="27" cy="27" r="27" />
+                        <!-- Track Circle (Thin line) -->
+                        <circle class="progress-circle-track" cx="27" cy="27" r="24" />
+                        <!-- Progress Stroke (White) -->
+                        <circle class="progress-circle-fill" cx="27" cy="27" r="24" />
+                    </svg>
+                    <span class="progress-text">--/--</span>
+                </div>
+            </div>
+            <h2 class="fs-40">Great Job!</h2>
+            <div class="check">
+                <img src="assets/images/Check.png" alt="check">
+            </div>
+            <p>You have completed How to create you account</p>
+            <button class="continue-ebook">CONTINUE</button>
+        </div>
+    </div>
+
+    <header class="custom-header">
+        <div class="header-wrapper">
+            <div class="profile-tab">
+                <a href="profile.html"><img src="assets/images/profile-avtar.png" alt="profile-avtar"></a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="assets/images/discover.svg" alt="icon">
+                            <img src="assets/images/discover-h.svg" alt="icon">
+                            Discover
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="user-module.html">
+                            <img src="assets/images/module.svg" alt="icon">
+                            <img src="assets/images/module-h.svg" alt="icon">
+                            Modules
+                        </a>
+                    </li>
+                    <li>
+                        <a href="community.html">
+                            <img src="assets/images/community.svg" alt="icon">
+                            <img src="assets/images/community-h.svg" alt="icon">
+                            Community
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tracking.html">
+                            <img src="assets/images/tracking.svg" alt="icon">
+                            <img src="assets/images/tracking-h.svg" alt="icon">
+                            Tracking
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <img src="assets/images/login.svg" alt="icon">
+                            <img src="assets/images/login-h.svg" alt="icon">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-page">
+        <section class="user-module-section">
+            <div class="myo-container">
+                <h1 class="fs-40">Modules</h1>
+                <div class="ourp-x newdata">
+                    <div class="row my-row justify-content-between">
+                        <div class="col-md-2">
+                            <div class="backto_btn">
+                                <a href="user-module.html" class="backto-main"><i class="fa-solid fa-angle-left"></i> Back</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="premium-content">
+                                <h2 class="fs-30 universal-inputs">Frequently Asked Questions (FAQs)</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="myo-container">
+                <section class="faq-section">
+                    <!-- <h5 class="fs-50">Frequently Ask Question</h5> -->
+                    <div class="accordion-container">
+                        <div class="tracking-holders for_faq">
+
+                            <div class="progress-wrapper inside" data-current="0" data-total="1">
+                                <svg class="progress-svg" viewBox="0 0 54 54">
+                                    <circle class="progress-circle-bg" cx="27" cy="27" r="27"></circle>
+                                    <circle class="progress-circle-track" cx="27" cy="27" r="24"></circle>
+                                    <circle class="progress-circle-fill" cx="27" cy="27" r="24"
+                                        style="stroke-dasharray: 150.796, 150.796; stroke-dashoffset: 150.796;">
+                                    </circle>
+                                </svg>
+                                <span class="progress-text">0/18</span>
+                            </div>
+
+                            <!-- 1: Sleep needed -->
+                            <div class="set">
+                                <div class="accordion-header">
+                                    <button class="accordion-title active">
+                                        <h4 class="fs-26">Get Started!</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="content" style="display: block;">
+                                    <div class="faqrow_flex">
+                                        <!-- FAQ 1 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 1"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-1"
+                                                                style="display: none;">
+                                                            <label for="Favorites-1" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-1.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How to create your account</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 1">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <ol>
+                                                    <li>Click on “Sign Up”</li>
+                                                    <li>You may add your email address, use Google account or Apple ID
+                                                        to
+                                                        sign in.</li>
+                                                    <li>Enter your Password to create your account.</li>
+                                                </ol>
+                                                <p>Once signed up, you’ll be automatically logged in or asked to log in
+                                                    with
+                                                    your new credentials.</p>
+                                                <p>To customize your profile, you click the Profile tab and update your
+                                                    details like:</p>
+                                                <ol>
+                                                    <li>Fullname</li>
+                                                    <li>Avatar/Icon</li>
+                                                    <li>Password</li>
+                                                </ol>
+                                                <p>That’s it! You’re ready to use the app or website.</p>
+                                                <p><strong>TIP: If you are using an iOS or Apple device, Always sign-up
+                                                        using your personal email, not the Private Relay email from
+                                                        Apple
+                                                        (Hide My Email option). That way you can log in on multiple
+                                                        devices
+                                                        without losing access to the purchased plan.</strong></p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 2 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 2"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-2"
+                                                                style="display: none;">
+                                                            <label for="Favorites-2" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-2.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Explore the app with the navigation bar
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 2">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <h4>Explore the app with the navigation bar</h4>
+                                                <p>Welcome to the app! There are different sections for you to explore:
+                                                </p>
+                                                <img src="assets/images/faq-imagee.png" alt="">
+                                                <p><strong>Discover</strong> - Check out this page to get to know the
+                                                    different plans available.</p>
+                                                <p><strong>Train</strong> - This is the spot to train, learn, and grow
+                                                    your
+                                                    skills.</p>
+                                                <p><strong>Community</strong> - Connect with others and get answers to
+                                                    your
+                                                    questions.</p>
+                                                <p><strong>Tracking</strong> - Measure your progress and make daily
+                                                    check-ins here.</p>
+                                                <p><strong>Profile</strong> - Access information about your account. If
+                                                    you
+                                                    encounter any app glitches, remember to share a screenshot of this
+                                                    page
+                                                    so we can help you out.</p>
+                                                <p><strong>TIP: You can always change the names of each navigation bar
+                                                        section.</strong></p>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 3 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 3"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-3"
+                                                                style="display: none;">
+                                                            <label for="Favorites-3" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-3.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Be part of our community</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 3">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 4 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 4"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-4"
+                                                                style="display: none;">
+                                                            <label for="Favorites-4" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-4.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Keep track of your progress</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 4">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 5 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 5"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-5"
+                                                                style="display: none;">
+                                                            <label for="Favorites-5" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-5.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How do I play my course videos on TV?</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 5">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="set">
+                                <div class="accordion-header">
+                                    <button class="accordion-title">
+                                        <h4 class="fs-26">Common Issues</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="content">
+                                    <div class="faqrow_flex">
+                                        <!-- FAQ 1 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 1"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-1"
+                                                                style="display: none;">
+                                                            <label for="Favorites-1" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-1.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How to create your account</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 1">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <ol>
+                                                    <li>Click on “Sign Up”</li>
+                                                    <li>You may add your email address, use Google account or Apple ID
+                                                        to
+                                                        sign in.</li>
+                                                    <li>Enter your Password to create your account.</li>
+                                                </ol>
+                                                <p>Once signed up, you’ll be automatically logged in or asked to log in
+                                                    with
+                                                    your new credentials.</p>
+                                                <p>To customize your profile, you click the Profile tab and update your
+                                                    details like:</p>
+                                                <ol>
+                                                    <li>Fullname</li>
+                                                    <li>Avatar/Icon</li>
+                                                    <li>Password</li>
+                                                </ol>
+                                                <p>That’s it! You’re ready to use the app or website.</p>
+                                                <p><strong>TIP: If you are using an iOS or Apple device, Always sign-up
+                                                        using your personal email, not the Private Relay email from
+                                                        Apple
+                                                        (Hide My Email option). That way you can log in on multiple
+                                                        devices
+                                                        without losing access to the purchased plan.</strong></p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 2 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 2"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-2"
+                                                                style="display: none;">
+                                                            <label for="Favorites-2" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-2.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Explore the app with the navigation bar
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 2">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <ol>
+                                                    <li>Click on “Sign Up”</li>
+                                                    <li>You may add your email address, use Google account or Apple ID
+                                                        to
+                                                        sign in.</li>
+                                                    <li>Enter your Password to create your account.</li>
+                                                </ol>
+                                                <p>Once signed up, you’ll be automatically logged in or asked to log in
+                                                    with
+                                                    your new credentials.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 3 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 3"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-3"
+                                                                style="display: none;">
+                                                            <label for="Favorites-3" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-3.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Be part of our community</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 3">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 4 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 4"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-4"
+                                                                style="display: none;">
+                                                            <label for="Favorites-4" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-4.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Keep track of your progress</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 4">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 5 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 5"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-5"
+                                                                style="display: none;">
+                                                            <label for="Favorites-5" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-5.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How do I play my course videos on TV?</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 5">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="set">
+                                <div class="accordion-header">
+                                    <button class="accordion-title">
+                                        <h4 class="fs-26">Basic Troubleshooting</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="content">
+                                    <div class="faqrow_flex">
+                                        <!-- FAQ 1 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 1"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-1"
+                                                                style="display: none;">
+                                                            <label for="Favorites-1" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-1.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How to create your account</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 1">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <ol>
+                                                    <li>Click on “Sign Up”</li>
+                                                    <li>You may add your email address, use Google account or Apple ID
+                                                        to
+                                                        sign in.</li>
+                                                    <li>Enter your Password to create your account.</li>
+                                                </ol>
+                                                <p>Once signed up, you’ll be automatically logged in or asked to log in
+                                                    with
+                                                    your new credentials.</p>
+                                                <p>To customize your profile, you click the Profile tab and update your
+                                                    details like:</p>
+                                                <ol>
+                                                    <li>Fullname</li>
+                                                    <li>Avatar/Icon</li>
+                                                    <li>Password</li>
+                                                </ol>
+                                                <p>That’s it! You’re ready to use the app or website.</p>
+                                                <p><strong>TIP: If you are using an iOS or Apple device, Always sign-up
+                                                        using your personal email, not the Private Relay email from
+                                                        Apple
+                                                        (Hide My Email option). That way you can log in on multiple
+                                                        devices
+                                                        without losing access to the purchased plan.</strong></p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 2 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 2"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-2"
+                                                                style="display: none;">
+                                                            <label for="Favorites-2" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-2.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Explore the app with the navigation bar
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 2">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <ol>
+                                                    <li>Click on “Sign Up”</li>
+                                                    <li>You may add your email address, use Google account or Apple ID
+                                                        to
+                                                        sign in.</li>
+                                                    <li>Enter your Password to create your account.</li>
+                                                </ol>
+                                                <p>Once signed up, you’ll be automatically logged in or asked to log in
+                                                    with
+                                                    your new credentials.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 3 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 3"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-3"
+                                                                style="display: none;">
+                                                            <label for="Favorites-3" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-3.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Be part of our community</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 3">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 4 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 4"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-4"
+                                                                style="display: none;">
+                                                            <label for="Favorites-4" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-4.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Keep track of your progress</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 4">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 5 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 5"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-5"
+                                                                style="display: none;">
+                                                            <label for="Favorites-5" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-5.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How do I play my course videos on TV?</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 5">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="set">
+                                <div class="accordion-header">
+                                    <button class="accordion-title">
+                                        <h4 class="fs-26">Cancellations</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="content">
+                                    <div class="faqrow_flex">
+                                        <!-- FAQ 1 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 1"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-1"
+                                                                style="display: none;">
+                                                            <label for="Favorites-1" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-1.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How to create your account</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 1">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <ol>
+                                                    <li>Click on “Sign Up”</li>
+                                                    <li>You may add your email address, use Google account or Apple ID
+                                                        to
+                                                        sign in.</li>
+                                                    <li>Enter your Password to create your account.</li>
+                                                </ol>
+                                                <p>Once signed up, you’ll be automatically logged in or asked to log in
+                                                    with
+                                                    your new credentials.</p>
+                                                <p>To customize your profile, you click the Profile tab and update your
+                                                    details like:</p>
+                                                <ol>
+                                                    <li>Fullname</li>
+                                                    <li>Avatar/Icon</li>
+                                                    <li>Password</li>
+                                                </ol>
+                                                <p>That’s it! You’re ready to use the app or website.</p>
+                                                <p><strong>TIP: If you are using an iOS or Apple device, Always sign-up
+                                                        using your personal email, not the Private Relay email from
+                                                        Apple
+                                                        (Hide My Email option). That way you can log in on multiple
+                                                        devices
+                                                        without losing access to the purchased plan.</strong></p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 2 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 2"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-2"
+                                                                style="display: none;">
+                                                            <label for="Favorites-2" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-2.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Explore the app with the navigation bar
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 2">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <ol>
+                                                    <li>Click on “Sign Up”</li>
+                                                    <li>You may add your email address, use Google account or Apple ID
+                                                        to
+                                                        sign in.</li>
+                                                    <li>Enter your Password to create your account.</li>
+                                                </ol>
+                                                <p>Once signed up, you’ll be automatically logged in or asked to log in
+                                                    with
+                                                    your new credentials.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 3 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 3"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-3"
+                                                                style="display: none;">
+                                                            <label for="Favorites-3" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-3.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Be part of our community</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 3">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 4 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 4"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-4"
+                                                                style="display: none;">
+                                                            <label for="Favorites-4" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-4.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Keep track of your progress</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 4">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 5 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 5"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-5"
+                                                                style="display: none;">
+                                                            <label for="Favorites-5" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-5.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How do I play my course videos on TV?</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 5">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="set">
+                                <div class="accordion-header">
+                                    <button class="accordion-title">
+                                        <h4 class="fs-26">Review the App</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="content">
+                                    <div class="faqrow_flex">
+                                        <!-- FAQ 1 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 1"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-1"
+                                                                style="display: none;">
+                                                            <label for="Favorites-1" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-1.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How to create your account</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 1">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <ol>
+                                                    <li>Click on “Sign Up”</li>
+                                                    <li>You may add your email address, use Google account or Apple ID
+                                                        to
+                                                        sign in.</li>
+                                                    <li>Enter your Password to create your account.</li>
+                                                </ol>
+                                                <p>Once signed up, you’ll be automatically logged in or asked to log in
+                                                    with
+                                                    your new credentials.</p>
+                                                <p>To customize your profile, you click the Profile tab and update your
+                                                    details like:</p>
+                                                <ol>
+                                                    <li>Fullname</li>
+                                                    <li>Avatar/Icon</li>
+                                                    <li>Password</li>
+                                                </ol>
+                                                <p>That’s it! You’re ready to use the app or website.</p>
+                                                <p><strong>TIP: If you are using an iOS or Apple device, Always sign-up
+                                                        using your personal email, not the Private Relay email from
+                                                        Apple
+                                                        (Hide My Email option). That way you can log in on multiple
+                                                        devices
+                                                        without losing access to the purchased plan.</strong></p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 2 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 2"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-2"
+                                                                style="display: none;">
+                                                            <label for="Favorites-2" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-2.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Explore the app with the navigation bar
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 2">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <ol>
+                                                    <li>Click on “Sign Up”</li>
+                                                    <li>You may add your email address, use Google account or Apple ID
+                                                        to
+                                                        sign in.</li>
+                                                    <li>Enter your Password to create your account.</li>
+                                                </ol>
+                                                <p>Once signed up, you’ll be automatically logged in or asked to log in
+                                                    with
+                                                    your new credentials.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 3 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 3"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-3"
+                                                                style="display: none;">
+                                                            <label for="Favorites-3" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-3.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Be part of our community</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 3">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 4 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 4"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-4"
+                                                                style="display: none;">
+                                                            <label for="Favorites-4" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-4.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">Keep track of your progress</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 4">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 5 -->
+                                        <div class="faqmain-parentss">
+                                            <div class="faq-gridss">
+                                                <div class="faq_fristgrids">
+
+                                                    <div class="mark_favorite">
+                                                        <div class="favorite-checked" aria-label="favorite faq 5"
+                                                            role="button" tabindex="0">
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <input type="checkbox" id="Favorites-5"
+                                                                style="display: none;">
+                                                            <label for="Favorites-5" class="fs-20"
+                                                                style="display: none;">Favorites</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title_image-grids">
+                                                        <div class="image_faqq">
+                                                            <img src="assets/images/faq-5.png" alt="image" height="64"
+                                                                width="64" loading="lazy">
+                                                        </div>
+                                                        <div class="title-ofafaq">
+                                                            <h6 class="fs-20">How do I play my course videos on TV?</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="icon_faq" role="button" aria-label="toggle faq 5">
+                                                    <img src="assets/images/plus.svg" class="plus-image" height="34"
+                                                        width="34" loading="lazy" alt="+">
+                                                    <img src="assets/images/minus.svg" class="minus-image" height="34"
+                                                        width="34" loading="lazy" alt="-">
+                                                </div>
+                                            </div>
+
+                                            <div class="alldatafaq-here">
+                                                <p>Launch the app or visit the website, then follow the steps below so
+                                                    you
+                                                    can start creating your account.</p>
+                                                <div class="onlybtns">
+                                                    <a class="universal-btn" href="javascript:void(0)">COMPLETE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </section>
+        <div class="copyright-footer">
+            <div class="myo-container">
+                <p>©2025 Dr Liesl Roome Inc. All rights reserved</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- PDF.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $(".favorite-checked").click(function (e) {
+                e.preventDefault();
+                $(this).toggleClass("active-link");
+                const icon = $(this).find("i");
+                icon.toggleClass("fa-regular fa-solid");
+                const checkbox = $(this).find("input[type='checkbox']");
+                checkbox.prop("checked", !checkbox.prop("checked"));
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".icon_faq").click(function () {
+
+                let parent = $(this).closest(".faqmain-parentss");
+                let grid = parent.find(".faq-gridss");
+                let content = parent.find(".alldatafaq-here");
+
+                // Slide toggle
+                content.slideToggle(300);
+
+                // Toggle active class
+                grid.toggleClass("faq-active");
+
+                // Toggle icons
+                parent.find(".plus-image").toggle();
+                parent.find(".minus-image").toggle();
+            });
+
+        });
+        $(document).ready(function () {
+            $(".faqmain-parentss a.universal-btn").click(function () {
+                $("#modalOverlay").fadeIn();
+            });
+
+            $(".close-icon").click(function () {
+                $("#modalOverlay").fadeOut();
+            });
+
+            $("#modalOverlay").click(function (event) {
+                if (!$(event.target).closest(".modal-box").length) {
+                    $("#modalOverlay").fadeOut();
+                }
+            });
+        });
+    </script>
+
+    <!-- JS Script to Handle Progress Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBars = document.querySelectorAll('.progress-wrapper');
+
+            progressBars.forEach(bar => {
+                // Get values from data attributes (populated by PHP)
+                const current = parseInt(bar.getAttribute('data-current') || 0);
+                const total = parseInt(bar.getAttribute('data-total') || 1);
+
+                // Update text
+                const textEl = bar.querySelector('.progress-text');
+                if (textEl) {
+                    textEl.textContent = `${current}/${total}`;
+                }
+
+                // Calculate Progress Circle
+                const circle = bar.querySelector('.progress-circle-fill');
+                if (circle) {
+                    const radius = circle.r.baseVal.value;
+                    const circumference = 2 * Math.PI * radius;
+
+                    // Set SVG properties
+                    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+
+                    // Calculate offset
+                    // If current is 0, offset = circumference (empty)
+                    // If current is total, offset = 0 (full)
+                    const percent = Math.min(Math.max(current / total, 0), 1); // Clamp between 0 and 1
+                    const offset = circumference - (percent * circumference);
+
+                    circle.style.strokeDashoffset = offset;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

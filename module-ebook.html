@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.png" sizes="32x32" />
+    <title>myo clinic</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/mn-style.css">
+</head>
+
+<body>
+
+    <header class="custom-header">
+        <div class="header-wrapper">
+            <div class="profile-tab">
+                <a href="profile.html"><img src="assets/images/profile-avtar.png" alt="profile-avtar"></a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="assets/images/discover.svg" alt="icon">
+                            <img src="assets/images/discover-h.svg" alt="icon">
+                            Discover
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="user-module.html">
+                            <img src="assets/images/module.svg" alt="icon">
+                            <img src="assets/images/module-h.svg" alt="icon">
+                            Modules
+                        </a>
+                    </li>
+                    <li>
+                        <a href="community.html">
+                            <img src="assets/images/community.svg" alt="icon">
+                            <img src="assets/images/community-h.svg" alt="icon">
+                            Community
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tracking.html">
+                            <img src="assets/images/tracking.svg" alt="icon">
+                            <img src="assets/images/tracking-h.svg" alt="icon">
+                            Tracking
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <img src="assets/images/login.svg" alt="icon">
+                            <img src="assets/images/login-h.svg" alt="icon">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-page">
+        <div class="myo-container">
+            <section class="user-module-section">
+                <h1 class="fs-40">Modules</h1>
+                <div class="ourp-x">
+                    <a href="user-module.html" class="backto-main"><i class="fa-solid fa-angle-left"></i> Back</a>
+                    <div class="premium-content">
+                        <h2 class="fs-30">Ebook</h2>
+                        <p class="try-free">Bonus material for subscribers</p>
+                    </div>
+                </div>
+                <div class="ebook-section">
+                    <h2 class="fs-40">myoActivation Explained</h2>
+                    <a class="universal-btn" href="assets/images/myo-ebook.pdf" target="_blank"><img
+                            src="assets/images/PDF.svg" alt="pdf">myoActivation Explained.pdf</a>
+                    <div class="pdf-viewer">
+                        <div class="pdf-viewer-header">
+                            <div class="pdf-progress">
+                                <!-- Progress Bar Component -->
+                                <!-- PHP Integration: Inject variables into data-current and data-total -->
+                                <div class="progress-wrapper" data-current="0" data-total="1">
+                                    <svg class="progress-svg" viewBox="0 0 54 54">
+                                        <!-- Background Circle (Solid Grey) -->
+                                        <circle class="progress-circle-bg" cx="27" cy="27" r="27" />
+                                        <!-- Track Circle (Thin line) -->
+                                        <circle class="progress-circle-track" cx="27" cy="27" r="24" />
+                                        <!-- Progress Stroke (White) -->
+                                        <circle class="progress-circle-fill" cx="27" cy="27" r="24" />
+                                    </svg>
+                                    <span class="progress-text">--/--</span>
+                                </div>
+                            </div>
+                            <div class="other-options">
+                                <div class="fav-wrapper">
+                                    <input type="checkbox" id="fav2" class="fav-checkbox">
+                                    <label for="fav2" class="fav-label" title="Mark as favorite">
+                                        <svg class="star-icon" viewBox="0 0 24 24">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="bar-menu">
+                                    <button class="bar-button"><img src="assets/images/bars.svg"
+                                            alt="menu-bar"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pdf-box">
+                            <div id="loadingScreen" style="text-align: center; padding: 20px;">
+                                <div class="spinner"></div>
+                                <p>Loading PDF...</p>
+                            </div>
+
+                            <div id="pdfViewer" style="display: none;"></div>
+                        </div>
+                        <div class="completed-pdf">
+                            <button class="cmpdf open-modaldata">COMPLETE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="modal-overlay" id="modalOverlay">
+                <div class="modal-box">
+                    <div class="close-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21.001 4.41406L13.416 11.998L21.0039 19.5859L19.5898 21L12.002 13.4121L4.41406 21L3 19.5859L10.5869 11.998L3.00293 4.41406L4.41699 3L12.002 10.584L19.5869 3L21.001 4.41406Z"
+                                fill="#444444" />
+                        </svg>
+                    </div>
+                    <div class="pdf-progress" style="background-image: url(assets/images/popbg.png);">
+                        <!-- Progress Bar Component -->
+                        <!-- PHP Integration: Inject variables into data-current and data-total -->
+                        <div class="progress-wrapper" data-current="1" data-total="1">
+                            <svg class="progress-svg" viewBox="0 0 54 54">
+                                <!-- Background Circle (Solid Grey) -->
+                                <circle class="progress-circle-bg" cx="27" cy="27" r="27" />
+                                <!-- Track Circle (Thin line) -->
+                                <circle class="progress-circle-track" cx="27" cy="27" r="24" />
+                                <!-- Progress Stroke (White) -->
+                                <circle class="progress-circle-fill" cx="27" cy="27" r="24" />
+                            </svg>
+                            <span class="progress-text">--/--</span>
+                        </div>
+                    </div>
+                    <h2 class="fs-40">Great Job!</h2>
+                    <div class="check">
+                        <img src="assets/images/Check.png" alt="check">
+                    </div>
+                    <p>You have completed Ebook</p>
+                    <button class="continue-ebook">CONTINUE</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright-footer">
+            <div class="myo-container">
+                <p>©2025 Dr Liesl Roome Inc. All rights reserved</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- PDF.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        const url = 'assets/images/myo-ebook.pdf';
+        const pdfjsLib = window['pdfjs-dist/build/pdf'];
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+        const loadingScreen = document.getElementById('loadingScreen');
+        const pdfViewer = document.getElementById('pdfViewer');
+
+        pdfjsLib.getDocument(url).promise.then(async (pdf) => {
+            const totalPages = pdf.numPages;
+            let pagesRendered = 0;
+
+            // Loop through pages
+            for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+                const page = await pdf.getPage(pageNum);
+                const viewport = page.getViewport({ scale: 1.5 }); // Adjusted scale for better quality
+
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                pdfViewer.appendChild(canvas);
+
+                // Wait for the page to finish rendering
+                await page.render({
+                    canvasContext: context,
+                    viewport: viewport
+                }).promise;
+
+                pagesRendered++;
+
+                // Once all pages are done, swap the views
+                if (pagesRendered === totalPages) {
+                    loadingScreen.style.display = 'none';
+                    pdfViewer.style.display = 'block';
+                }
+            }
+        }).catch(err => {
+            loadingScreen.innerHTML = "Error loading PDF.";
+            console.error(err);
+        });
+    </script>
+
+    <!-- JS Script to Handle Progress Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBars = document.querySelectorAll('.progress-wrapper');
+
+            progressBars.forEach(bar => {
+                // Get values from data attributes (populated by PHP)
+                const current = parseInt(bar.getAttribute('data-current') || 0);
+                const total = parseInt(bar.getAttribute('data-total') || 1);
+
+                // Update text
+                const textEl = bar.querySelector('.progress-text');
+                if (textEl) {
+                    textEl.textContent = `${current}/${total}`;
+                }
+
+                // Calculate Progress Circle
+                const circle = bar.querySelector('.progress-circle-fill');
+                if (circle) {
+                    const radius = circle.r.baseVal.value;
+                    const circumference = 2 * Math.PI * radius;
+
+                    // Set SVG properties
+                    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+
+                    // Calculate offset
+                    // If current is 0, offset = circumference (empty)
+                    // If current is total, offset = 0 (full)
+                    const percent = Math.min(Math.max(current / total, 0), 1); // Clamp between 0 and 1
+                    const offset = circumference - (percent * circumference);
+
+                    circle.style.strokeDashoffset = offset;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
